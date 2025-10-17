@@ -191,3 +191,42 @@ Beberapa contoh umum termasuk :
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tombol Fixed</title>
+<style>
+/* CSS untuk membuat tombol tetap di posisi */
+.fixed-button {
+  position: fixed; /* Menentukan posisi tetap */
+  bottom: 20px;    /* Jarak dari bawah layar */
+  right: 20px;     /* Jarak dari kanan layar */
+  background-color: #4CAF50; /* Warna latar belakang */
+  color: white;               /* Warna teks */
+  padding: 15px 32px;         /* Padding (ruang di dalam tombol) */
+  text-align: center;          /* Posisi teks di tengah */
+  text-decoration: none;      /* Menghilangkan garis bawah pada link */
+  display: inline-block;       /* Menjadikan elemen inline-block */
+  font-size: 16px;             /* Ukuran font */
+  margin: 4px 2px;             /* Margin (jarak dari elemen lain) */
+  cursor: pointer;             /* Mengubah cursor menjadi pointer saat dihover */
+  border-radius: 10px;          /* Membuat sudut tombol menjadi bulat */
+  z-index: 1000;              /* Memastikan tombol selalu di atas elemen lain */
+}
+
+/* CSS untuk konten halaman (agar bisa di-scroll) */
+.content {
+  height: 2000px; /* Tinggi konten, sesuaikan sesuai kebutuhan */
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+</div>
+
+<a href="https://aldyhilman609-debug.github.io/sbk/proses.html" class="fixed-button">Ke Halaman proses</a>
+
+</body>
+</html>
