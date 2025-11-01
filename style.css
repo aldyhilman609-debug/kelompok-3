@@ -38,6 +38,7 @@ body {
 .card img {
   width: 100%;
   height: 100%;
+  left: 500px;
   object-fit: cover;
 }
 
@@ -75,7 +76,7 @@ body {
 .fixed-button {
   position: fixed; /* Membuat elemen tetap di posisinya */
   bottom: 20px; /* Jarak dari bawah layar */
-  right: 20px; /* Jarak dari kanan layar */
+  right: 50px; /* Jarak dari kanan layar */
   background-color: #007bff; /* Warna latar belakang */
   color: white; /* Warna teks */
   padding: 10px 20px; /* Padding di dalam tombol */
@@ -90,18 +91,23 @@ body {
   background-color: #0056b3; /* Warna latar belakang saat dihover */
 }
 
-
-
-
-
-
-
-
 .fade{
   opacity: 0;
-  animation: fadeIn 2s forwards;
+  animation: Slide-down 2s forwards;
 }
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+@keyframes Slide-down {
+  from {opacity: 0;
+  transform: translateY(-20px);}
+  to {opacity: 1;
+  transform: translateY(0);}
+}
+.fade1{
+  opacity: 0;
+  animation: Slide-down 4s forwards;
+}
+@keyframes Slide-down {
+  from {opacity: 0;
+  transform: translateY(-40px);}
+  to {opacity: 1;
+  transform: translateY(0);}
 }
