@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="love.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <div class="kotak"><h1>i love youuu</h1></div>
+  <div class="kotak"><h1>i love youuu</h1></div>
+  <div class="kotak"><h1>i love youuu</h1></div>
+  <div class="kotak"><h1>i love youuu</h1></div>
+  <div class="bom"><h2 class="teks">i love youuuuu deaaaaaa</h2></div>
+
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images</title>
+    <link rel="stylesheet" type="text/css" href="love.css">
+</head>
+<body>
+    <div class="container">
+        </div>
+    <script>
+        const container = document.querySelector('.container');
+        const numberOfImages = 20; // Jumlah gambar
+
+        for (let i = 0; i < numberOfImages; i++) {
+            const img = document.createElement('img');
+            img.src = 'https://files.catbox.moe/xu55c0.png'; // Ganti dengan path gambar Anda
+            img.classList.add('floating-image');
+
+            // Posisi acak horizontal
+            const randomX = Math.random() * 100;
+            img.style.left = randomX + 'vw';
+
+            // Ukuran acak
+            const randomSize = Math.random() * 50 + 50; // Ukuran antara 50px dan 100px
+            img.style.width = randomSize + 'px';
+            img.style.height = randomSize + 'px';
+
+            // Kecepatan animasi acak
+            const randomDuration = Math.random() * 5 + 5; // Durasi antara 5s dan 10s
+            img.style.animationDuration = randomDuration + 's';
+
+            // Penundaan animasi acak
+            const randomDelay = Math.random() * 1;
+            img.style.animationDelay = randomDelay + 's';
+
+            container.appendChild(img);
+        }
+    </script>
+</body>
+</html>
